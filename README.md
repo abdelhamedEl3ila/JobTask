@@ -5,4 +5,4 @@
 enter userame = abdelhamedelaila
 password=cheefa
 5-open dashboard route i used poltly liberary in this case  to show visulization of data after add quires of sql 
-6-open data route to show tabular of data 
+6-open data route to show tabular of data  
