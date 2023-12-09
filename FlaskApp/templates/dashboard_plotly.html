@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Include Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Dashboard</h1>
+
+    <div>
+        <h2>Product Categories</h2>
+        <!-- Include the Bar Chart -->
+        <div id="bar-chart"></div>
+        {{ bar_chart_path|safe }}
+    </div>
+   
+  
+    <div>
+        <h2>Order Counts Over Time</h2>
+        <!-- Include the Line Chart -->
+        <div id="line-chart"></div>
+        {{ line_chart_path|safe }}
+    </div>
+
+    <div>
+        <h2>mark on map by review score </h2>
+        <!-- Include the Pie Chart -->
+        <div id="map-chart"></div>
+        {{ map_char_path|safe }}
+    </div>
+    <div style="display: flex;">
+
+        <!-- First Chart: Bar Chart -->
+        <div style="flex: 1; margin-right: 10px;">
+            <h2>pie_chart_order</h2>
+            <div id="pie_chart_order"></div>
+            {{ pie_chart_order_path|safe }}
+        </div>
+
+        <!-- Second Chart: Line Chart -->
+        <div style="flex: 1; margin-left: 10px;">
+            <h2>bar_chart_payment</h2>
+            <!-- Include the Line Chart -->
+            <div id="bar_chart_payment"></div>
+            {{ bar_chart_payment_path|safe }}
+        </div>
+
+    </div>
+
+ 
+</body>
+</html>
